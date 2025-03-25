@@ -1,0 +1,395 @@
+/* Aseguramos que el cuerpo y html tengan una altura completa */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: black;
+    color: #00FF00;
+    text-align: center;
+}
+
+
+
+/* El contenedor principal que rodea todo el contenido */
+
+
+/* Estilos generales del cuerpo */
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Terminal */
+.terminal {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #00FF00;
+}
+
+p {
+    color: #00FF00;
+}
+
+h1 {
+    color: #00FF00;
+}
+
+h2 {
+    color: #00FF00;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid #00FF00;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    gap: 10px;
+
+}
+
+nav span {
+    margin-right: 15px;
+}
+
+nav a {
+    color: #00FF00;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#titulo {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00FF00;
+    display: inline-block;
+    animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.pixel-art {
+    width: 400px;
+    image-rendering: pixelated;
+    border: 2px solid #00FF00;
+    padding: 5px;
+}
+
+/* Estilos para el contenedor principal */
+
+
+/* Estilos para el contenedor del reproductor de audio */
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el reproductor ocupe todo el ancho disponible */
+    max-width: 300px; /* Puedes ajustar este valor para el tamaño adecuado */
+    margin: 0 auto; /* Centra el reproductor */
+    background-color: black;
+    border: 2px solid #00FF00;
+    padding: 20px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos para los controles personalizados */
+.audio-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+button {
+    background-color: #00FF00;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+/* Barra de progreso */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 80%;
+    background-color: #00FF00;
+    height: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgb(19, 17, 17);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #00FF00;
+    height: 5px;
+}
+
+/* Asegura que el audio ocupe el 100% del contenedor */
+audio {
+    width: 100%;
+    background-color: black;
+    border: none;
+    outline: none;
+}
+
+/* Estilo del botón de Play/Pause */
+button.play-pause {
+    font-size: 20px;
+}
+
+/* Efecto hover en el contenedor */
+.audio-container:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 100px;
+    margin: auto;
+    padding: 15px;
+    border: 2px solid #00FF00;
+
+}
+
+/* Estilo para el banner */
+#banner {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #00FF00;
+
+}
+
+/* Contenido dentro del banner */
+.banner-content {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+/* Estilo para el icono de Dragonlance (ajusta el tamaño según tu imagen) */
+.dragonlance-icon {
+    width: 160px; /* Tamaño del icono */
+    height: 160px;
+    margin-bottom: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilo para el texto del banner */
+#banner h1 {
+    font-family: 'Courier New', Courier, monospace; /* Tipografía retro */
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: black;
+    color: #00FF00;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 160px; /* Espacio para que la barra no se superponga con el banner */
+}
+
+nav a {
+    color: #00FF00;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Resto del contenido */
+#contenido {
+    padding: 20px;
+    color: #fff;
+    flex-grow: 1; /* Esto hace que el contenido ocupe todo el espacio disponible antes del footer */
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: black;
+    color: #00FF00;
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+
+}
+
+/* Estilo para el contenido dentro del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* Estilo para el icono de la lanza */
+.lance-icon {
+    width: 40px;
+    height: 40px;
+
+}
+
+/* Estilo para el texto del footer */
+footer p {
+    background-color: black;
+    color: #00FF00;
+    padding: 20px;
+    text-align: center;
+}
+
+.character-list {
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.character-list li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.character-list p {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Efecto dorado */
+}
+
+.book-list h3 {
+    color: #00FF00; /* Amarillo dorado */
+    text-align: center;
+    border-bottom: 2px solid #00FF00;
+    padding-bottom: 5px;
+    width: 80%;
+}
+
+.book-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.book-list li {
+    padding: 10px;
+    font-size: 16px;
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.1); /* Resaltado leve */
+    border-left: 5px solid #00FF00;
+    margin: 5px 0;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book-list li:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo terminal para la lista de hechizos */
+.terminal {
+    background-color: black;
+    color: #00FF00; /* Verde terminal */
+    font-family: "Courier New", monospace;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.terminal h3 {
+    text-shadow: 0 0 10px #00FF00;
+}
+
+.terminal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.terminal li {
+    padding: 5px 0;
+    border-left: 2px solid #00FF00;
+    padding-left: 10px;
+}
+
+.terminal li::before {
+    content: "> ";
+    color: #00FF00;
+}
+
+.pixel-art, .dragonlance-icon {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00FF00;
+    padding: 5px;
+}
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .terminal {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .banner-content h1 {
+        font-size: 20px;
+    }
+}

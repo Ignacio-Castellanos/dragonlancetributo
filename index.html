@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonlance Vintage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner con el icono de Dragonlance -->
+    <section id="banner">
+        <div class="banner-content">
+            <img src="img/iconodragon.jpg" alt="Dragonlance Icon" class="dragonlance-icon">
+            <h1>Bienvenido al Mundo de la Dragonlance</h1>
+        </div>
+    </section>
+
+    <div class="terminal">
+        <!-- Barra de navegación -->
+        <nav>
+            <span>> <a href="index.html">Inicio</a></span>
+            <span>> <a href="libros.html">Libros</a></span>
+            <span>> <a href="personajes.html">Personajes</a></span>
+            <span>> <a href="mapa.html">Mapa</a></span>
+            <span>> <a href="galeria.html">Galería</a></span>
+            <span>> <a href="codigo.html">Código Arcano</a></span>
+        </nav>
+
+        <section id="codigo">
+            <h2>🎶 Música Medieval</h2>
+            <div class="audio-container">
+                <audio id="audio" preload="auto">
+                    <source src="music/music.mp3" type="audio/mp3">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <!-- Controles personalizados -->
+                <div class="audio-controls">
+                    <button class="play-pause" id="playPauseBtn">►</button>
+                    <input type="range" id="progress" value="0" max="100">
+                    <input type="range" id="volume" value="100" max="100">
+                </div>
+            </div>
+        </section>
+
+        <div id="contenido">
+            <h1 id="titulo"></h1>
+            <p id="descripcion"></p>
+            
+            <section id="inicio">
+                <img src="img/A_pixel_art_illustration_of_a_dragon_in_green_shad.png.png" alt="Dragonlance Icon" class="dragonlance-icon">
+                <h2>Introducción</h2>
+                <p>La saga de la Dragonlance es una de las más icónicas del universo de Dungeons & Dragons. Creada por Margaret Weis y Tracy Hickman, nos transporta a un mundo de caballeros, dragones y magia ancestral.</p>
+            </section>
+            
+            <section id="galeria">
+                <img src="img/lanza.jpg" alt="Dragonlance Icon" class="dragonlance-icon">
+                <h2>País de Abanasinia</h2>
+                 <img src="img/El País de Abanasinia.jpg" alt="Pixel Art mapa de la Dragonlance" class="pixel-art">
+            </section>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/A_pixel_art_illustration_of_a_dragon_in_green_shad.png.png" alt="Lanza Icono" class="lance-icon">
+            <p>&#169; 2025 Ignacio Castellanos. Esta es una página tributo a la saga Dragonlance, sin ánimo de lucro. Todos los derechos de los contenidos originales pertenecen a sus respectivos autores y propietarios.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
